@@ -83,6 +83,7 @@ $(function() {
 
     });
 
+    /* Animaçao do Menu*/
 
     $(function() {
         var shrinkHeader = 350;
