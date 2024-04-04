@@ -113,3 +113,10 @@ $(function() {
 
 
 });
+
+
+document.getElementById('see_main').addEventListener('click', function(event) {
+    event.preventDefault();
+    var aboutSection = document.getElementById('about');
+    aboutSection.classList.remove('hidden');
+    fadeIn(aboutSection); }) 
