@@ -1034,11 +1034,4 @@ body {
 }
 .see_bt a:hover{
     color: #599ee9;
-    transition: 1111ms;
-}
-
-p{
-    color:white;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif ;
 }
