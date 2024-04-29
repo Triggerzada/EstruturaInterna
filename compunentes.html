@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>| Estrutura interna de rede de computadores</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    type="text/css">
+  <link rel="shortcut icon" href="" type="image" />
+  <link href="css/nav.index.css" rel="stylesheet" />
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" />
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid top-nav">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo-top page-scroll" href="index.html">
+            <h1 id="title_nav">Estrutura interna de um computador</h1>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden nav-buttons">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#services">Componentes</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#testimonials">Tema</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about">Sobre </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="product_section layout_padding">
+      <div class="container">
+        <div class="product_text">todos os componentes</div>
+        <p class="long_text">Os componentes de um computador são as partes físicas que compõem a máquina e desempenham
+          funções específicas no processamento de dados. Aqui encontra alguns exemplos de componentes de um computador.
+        </p>
+        <div class="product_section_2">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="imagemcomp"><img src="img/componentes/motherboard.png" width="180px"></div>
+              <h1 class="game_text">Motherboard</h1>
+              <p class="long_text">A motherboard é um dos mais fundamentais componentes de um computador, fornecendo a
+                base física e elétrica para os restantes componentes.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="img/componentes/processador.png" width="180px" justify-content="center">
+              <h1 class="game_text">Processador</h1>
+              <p class="long_text">O processador, também conhecido como unidade central de processamento executa
+                instruções de programas armazenados na memória do computador.</p>
+            </div>
+          </div>
+        </div>
+        <div class="see_main">
+          <div class="see_bt"><a href="#about" onclick="toggleEquipamentos()">Ver Mais</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    function toggleEquipamentos() {
+      var equipamento1 = document.getElementById('equipamento1');
+      var equipamento2 = document.getElementById('equipamento2');
+      var botao = document.querySelector('.see_bt a');
+
+      if (equipamento1.style.display === 'none') {
+        equipamento1.style.display = 'block';
+        equipamento2.style.display = 'block';
+        botao.textContent = 'Fechar';
+      } else {
+        equipamento1.style.display = 'none';
+        equipamento2.style.display = 'none';
+        botao.textContent = 'Ver Mais';
+      }
+    }
+  </script>
+  <section id="about">
+    <div id="equipamento1" style="display:none">
+      <div class="product_section layout_padding">
+        <div class="container">
+          <div class="product_section_2">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="imagemcomp"><img src="img/componentes/fonte.png" width="180px"></div>
+                <h1 class="game_text">Fonte de Alimentação</h1>
+                <p class="long_text">A fonte de alimentação é o componente responsável por converter a energia elétrica da tomada numa forma utilizavel pelos componentes internos.</p>
+              </div>
+              <div class="col-md-6">
+                <div class="imagemcomp"><img src="img/componentes/cooler.png" width="180px"></div>
+                <h1 class="game_text">Cooler</h1>
+                <p class="long_text">Um cooler é um dispositivo de arrefecimento que tem a função principal de dissipar o calor gerado pelos componentes especialmente, o processador.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+
+
+</html>
