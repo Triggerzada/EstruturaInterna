@@ -90,7 +90,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #058BCE;
+    color: #bbbbbb86;
 }
 
 h1,
@@ -542,16 +542,7 @@ section {
 
 
 
-
-
-
-
-
-
-
-
-
-/*COMPUNENTES*/
+/*COMPONENTES*/
 
 .service-heading {
     margin: 25px 0px 15px 0px;
@@ -810,10 +801,10 @@ section h3.section-subheading {
     width: 100%;
 }
 
-.footerz4 {
+.footertrigger {
     background-color: #0A0A0A;
     width: 100vw;
-    height: 100%;
+    height: 17%;
     padding: 15px 0px;
 
 }
@@ -874,10 +865,10 @@ body {
 	width: 800px;
 	height: 400px;
 	margin: 15px;
-	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.12);
 	transition: box-shadow 0.3s ease;
 	overflow: hidden;
-	background: #414852;
+	background: #36363688;
 	border-radius: 15px;
 	transition: all 0.8s ease-in-out;
 }
@@ -1035,3 +1026,96 @@ body {
 .see_bt a:hover{
     color: #599ee9;
 }
+
+.triggertitle{
+    color: #058BCE;
+    text-align: center;
+    font-size: 50px;
+}
+
+.cardtrigger_row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+  
+  .cardtrigger {
+    background-color: #36363688;
+    width: 300px;
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.12);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  .cardtrigger:hover .overlay {
+	opacity: 1;
+}
+
+  .cardtrigger:hover {
+	transform: translateY(-10px);
+}
+  
+  .card_new {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cardtrigger_image {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #058BCE;
+    color: white;
+    font-size: 25px;
+  }
+  
+
+
+  .trigger_title {
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .trigger_subtitle {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  h5 {
+    font-family: "Poppins", sans-serif;
+    margin-top: -150px;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+  }
+  h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin-top: -5px;
+  }
+  .sepmistadaa {
+    margin-top: -400px;
+  }
+  
+
+  .page-scroll{
+    color: white
+    ;
+  }
+
+
+
+  
