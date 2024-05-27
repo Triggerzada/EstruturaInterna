@@ -8,7 +8,7 @@ $(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1000, 'easeInOutExpo');
+        }, 1400, 'easeInOutExpo');
         event.preventDefault();
     });
     $(document).ready(function() {

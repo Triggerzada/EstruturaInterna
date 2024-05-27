@@ -64,71 +64,62 @@
           funções específicas no processamento de dados. Aqui encontra alguns exemplos de componentes de um computador.
         </p>
         <div class="product_section_2">
-          <div class="row">
-            <div class="col-md-6">
+          <div class="row alignzada">
+            <div class="col-md-6 testzada">
               <div class="imagemcomp"><img src="img/componentes/motherboard.png" width="180px"></div>
               <h1 class="game_text">Motherboard</h1>
               <p class="long_text">A motherboard é um dos mais fundamentais componentes de um computador, fornecendo a
                 base física e elétrica para os restantes componentes.</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 testzada">
               <img src="img/componentes/processador.png" width="180px" justify-content="center">
               <h1 class="game_text">Processador</h1>
               <p class="long_text">O processador, também conhecido como unidade central de processamento executa
                 instruções de programas armazenados na memória do computador.</p>
             </div>
+        
           </div>
-        </div>
-        <div class="see_main">
-          <div class="see_bt"><a href="#about" onclick="toggleEquipamentos()">Ver Mais</a></div>
+          <div class="see_main">
+            <div class="see_bt"><a href="#about" onclick="toggleEquipamentos()">Ver Mais</a></div>
+          </div>
+          <div class="col-md-6 testzada">
+            <div class="imagemcomp"><img src="img/componentes/fonte.png" width="180px"></div>
+            <h1 class="game_text">Fonte de Alimentação</h1>
+            <p class="long_text">A fonte de alimentação é o componente responsável por converter a energia elétrica da tomada numa forma utilizavel pelos componentes internos.</p>
+          </div>
+          <div class="col-md-6 testzada">
+            <div class="imagemcomp"><img src="img/componentes/cooler.png" width="180px"></div>
+            <h1 class="game_text">Cooler</h1>
+            <p class="long_text">Um cooler é um dispositivo de arrefecimento que tem a função principal de dissipar o calor gerado pelos componentes especialmente, o processador.</p>
+          </div>
+          <div class="col-md-6 testzada">
+            <div class="imagemcomp"><img src="img/componentes/ram.png" width="180px"></div>
+            <h1 class="game_text">RAM</h1>
+            <p class="long_text">A RAM é um tipo de memória volátil utilizada em computadores e outros dispositivos para armazenar dados temporariamente.</p>
+          </div>
+          <div class="col-md-6 testzada">
+            <div class="imagemcomp"><img src="img/componentes/placagrafica.png" width="180px"></div>
+            <h1 class="game_text">Placa Gráfica </h1>
+            <p class="long_text">A placa gráfica, ou GPU é um componente essencial num computador que faz todo o processamento de gráficos e imagens.</p>
         </div>
       </div>
     </div>
   </section>
   <script>
+      var botao = document.querySelector('.see_main');
+      let button_seeless = document.querySelector('.see_main2')
     function toggleEquipamentos() {
       var equipamento1 = document.getElementById('equipamento1');
-      var equipamento2 = document.getElementById('equipamento2');
-      var botao = document.querySelector('.see_bt a');
-
-      if (equipamento1.style.display === 'none') {
-        equipamento1.style.display = 'block';
-        equipamento2.style.display = 'block';
-        botao.textContent = 'Fechar';
-      } else {
-        equipamento1.style.display = 'none';
-        equipamento2.style.display = 'none';
-        botao.textContent = 'Ver Mais';
-      }
+      equipamento1.style.display = 'block';
+      botao.style.display = "none"
+    }
+    function hide_elements() {
+      equipamento1.style.display = 'none';
+      botao.style.display = "block";
     }
   </script>
-  <section id="about">
-    <div id="equipamento1" style="display:none">
-      <div class="product_section layout_padding">
-        <div class="container">
-          <div class="product_section_2">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="imagemcomp"><img src="img/componentes/fonte.png" width="180px"></div>
-                <h1 class="game_text">Fonte de Alimentação</h1>
-                <p class="long_text">A fonte de alimentação é o componente responsável por converter a energia elétrica da tomada numa forma utilizavel pelos componentes internos.</p>
-              </div>
-              <div class="col-md-6">
-                <div class="imagemcomp"><img src="img/componentes/cooler.png" width="180px"></div>
-                <h1 class="game_text">Cooler</h1>
-                <p class="long_text">Um cooler é um dispositivo de arrefecimento que tem a função principal de dissipar o calor gerado pelos componentes especialmente, o processador.</p>
-              </div>
-              <div class="col-md-6">
-                <div class="imagemcomp"><img src="img/componentes/ram.png" width="180px"></div>
-                <h1 class="game_text">RAM</h1>
-                <p class="long_text">A RAM é um tipo de memória volátil utilizada em computadores e outros dispositivos para armazenar dados temporariamente.</p>
-              </div>
-              <div class="col-md-6">
-                <div class="imagemcomp"><img src="img/componentes/placagrafica.png" width="180px"></div>
-                <h1 class="game_text">Placa Gráfica </h1>
-                <p class="long_text">A placa gráfica, também conhecida como placa de vídeo ou GPU é um componente essencial num computador que faz todo o processamento de gráficos e imagens.</p>
-            </div>
-          </div>
+        <div class="see_main2" style="margin-bottom: 35px;">
+          <div class="see_bt"><a href="#about" onclick="hide_elements()">Ver Menos</a></div>
         </div>
       </div>
     </div>
