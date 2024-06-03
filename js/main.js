@@ -120,3 +120,6 @@ document.getElementById('see_main').addEventListener('click', function(event) {
     var aboutSection = document.getElementById('about');
     aboutSection.classList.remove('hidden');
     fadeIn(aboutSection); }) 
+
+
+    
